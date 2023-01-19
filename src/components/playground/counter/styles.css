@@ -1,0 +1,13 @@
+.counter {
+  text-align: center;
+  font-size: 24px;
+  width: 130px;
+}
+
+.counter-title {
+  text-transform: uppercase;
+}
+
+.counter-number {
+  color: var(--color-accent);
+}

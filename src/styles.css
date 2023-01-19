@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Formular";
+  src: local("Formular Regular"), local("Formular-Regular"), url("./assets/fonts/Formular.woff2") format("woff2"),
+    url("./assets/fonts/Formular.woff") format("woff"), url("./assets/fonts/Formular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formular";
+  src: local("Formular Medium"), local("Formular-Medium"), url("./assets/fonts/Formular-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Formular-Medium.woff") format("woff"),
+    url("./assets/fonts/Formular-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Formular";
+  src: local("Formular Bold"), local("Formular-Bold"), url("./assets/fonts/Formular-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Formular-Bold.woff") format("woff"), url("./assets/fonts/Formular-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #0083fc;
+  --color-primary-rgba: 0, 131, 252;
+  --color-accent: #f53;
+  --color-white: #fff;
+  --color-grey: #e5e5e5;
+}
+
+* {
+  all: unset;
+  display: revert;
+}
+
+body {
+  font-family: "Formular", helvetica, arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  background: var(--color-white);
+  color: var(--color-primary);
+}

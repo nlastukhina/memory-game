@@ -1,0 +1,59 @@
+.card {
+  position: relative;
+  width: var(--card-size);
+  height: var(--card-size);
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  cursor: pointer;
+}
+
+.card.is-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.card-opened {
+  background: var(--color-white);
+}
+
+.card-fake {
+  background: var(--color-grey);
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card.is-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.card img {
+  display: block;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-front-face {
+  color: black;
+}
+
+/* Style the back side */
+.card-back-face {
+  color: white;
+  transform: rotateY(180deg);
+}
